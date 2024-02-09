@@ -1,3 +1,4 @@
+
 //#region 
 const konya="Konya";
 const istanbul="Istanbul";
