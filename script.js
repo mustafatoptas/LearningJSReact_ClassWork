@@ -1,5 +1,3 @@
-
-//#region 
 const konya="Konya";
 const istanbul="Istanbul";
 const ankara="Ankara";
@@ -11,7 +9,7 @@ let cities = new Array();
 for (let i = 0; i < 4; i++) {
     cities.push(konya);
 }
-//#endregion
+
 console.log("********************Pushed Izmir*******************");
 console.log(cities);
 cities.push(izmir);
