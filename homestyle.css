@@ -1,0 +1,61 @@
+
+.dark-theme {
+    background-color: #1f1f1f; 
+    color: #fff; 
+}
+
+
+header {
+    background-color: #333; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+.person-container {
+    display: flex;
+}
+
+.person {
+    background-color: #333; 
+    color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: calc(50% - 40px);
+}
+
+.person img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.person h2 {
+    color: #fff; 
+}
+
+.person p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
