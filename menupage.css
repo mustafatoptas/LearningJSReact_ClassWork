@@ -46,11 +46,18 @@
 }
 
 .array-div {
-    width: 450px; 
+    width: 470px; 
+    margin-left: 400px;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: #a22222;
     border: 1px solid #942a2a;
+    border-radius: 18PX;
     padding: 20px;
     box-sizing: border-box;
+}
+.bodydiv{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
