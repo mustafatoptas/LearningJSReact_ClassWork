@@ -208,51 +208,126 @@ const index = cities.indexOf("Izmir");
 divFindIndex.innerHTML +=
   "<h4>(cities.indexOf(Izmir));====>" + index + "</h4><br>";
 
-//#region
-// let outputDivInclude = document.getElementById("Include");
-// outputDivInclude.innerHTML += "<h1>Include</h1><br>";
-// outputDivInclude.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// let tf=cities.includes(izmir)
-// outputDivInclude.innerHTML+="<h4>"+"cities.includes(izmir);====>"+tf +"</h4>"+ "<br>";
+/*const operators = ["Ali", "Osman", "Mustafa", "Rıfat"];
 
-// let outputDivIndexOf = document.getElementById("indexof");
-// outputDivIndexOf.innerHTML += "<h1>Index Of 3</h1><br>";
-// outputDivIndexOf.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// let Io=cities.at(2)
-// outputDivIndexOf.innerHTML+="<h4>"+"cities.at(2)====>"+Io +"</h4>"+ "<br>";
+// 1. includes(): Belirli bir öğenin dizide olup olmadığını kontrol eder.
+const hasOsman = operators.includes("Osman");
+console.log("Osman dizide mi?", hasOsman); // true
 
-// let outputDivSlice = document.getElementById("slice");
-// outputDivSlice.innerHTML += "<h1>Slice</h1><br>";
-// outputDivSlice.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// cities.splice(0,1)
-// outputDivSlice.innerHTML+="<h4>"+"cities.splice(0,1)====>"+cities.toString() +"</h4>"+ "<br>";
+// 2. indexOf(): Belirli bir öğenin dizideki indeksini döndürür.
+const MustafaIndex = operators.indexOf("Mustafa");
+console.log("Mustafa'un indeksi:", MustafaIndex); // 2
 
-// cities=[];
-// cities.push(konya,izmir,ankara,izmir);
-// let outputDivSplice = document.getElementById("splice");
-// outputDivSplice.innerHTML += "<h1>Splice</h1><br>";
-// outputDivSplice.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// cities.slice(0,1)
-// outputDivSplice.innerHTML+="<h4>"+"cities.slice(0,1)====>"+Io +"</h4>"+ "<br>";
+// 3. join(): Dizideki tüm öğeleri birleştirip bir dizeye dönüştürür.
+const joinedOperators = operators.join(", ");
+console.log("Birleştirilmiş operatörler:", joinedOperators); // "Ali, Osman, Mustafa, Rıfat"
 
-// let outputDivFill = document.getElementById("fill");
-// outputDivFill.innerHTML += "<h1>Fill(Antalya)</h1><br>";
-// outputDivFill.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// cities.fill(antalya)
-// outputDivFill.innerHTML+="<h4>"+"cities.fill(antalya)====>"+cities.toString() +"</h4>"+ "<br>";
+// 4. reverse(): Diziyi tersine çevirir.
+const reversedOperators = operators.reverse();
+console.log("Tersine çevrilmiş operatörler:", reversedOperators); // ["Rıfat", "Mustafa", "Osman", "Ali"]
 
-// cities=[];
-// cities.push(konya,izmir,ankara,izmir)
+// 5. sort(): Diziyi sıralar.
+const sortedOperators = operators.sort();
+console.log("Sıralanmış operatörler:", sortedOperators); // ["Osman", "Mustafa", "Rıfat", "Ali"]
 
-// let outputDivFind = document.getElementById("Find");
-// outputDivFind.innerHTML += "<h1>Find(Izmir)</h1><br>";
-// outputDivFind.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// const finder=cities.find(finder=>finder=="Izmir")
-// outputDivFind.innerHTML+="<h4>"+"cities.find(finder=>finder==Izmir)====>"+finder +"</h4>"+ "<br>";
+// 6. slice(): Belirli bir kısmı kopyalar ve yeni bir dizi oluşturur.
+const selectedOperators = operators.slice(1, 3);
+console.log("Seçilen operatörler:", selectedOperators); // ["Mustafa", "Rıfat"]
 
-// let outputDivFindIndex = document.getElementById("FindIndex");
-// outputDivFindIndex.innerHTML += "<h1>FindIndex(Izmir)</h1><br>";
-// outputDivFindIndex.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
-// const index=(cities.indexOf("Izmir"));
-// outputDivFindIndex.innerHTML+="<h4>"+"(cities.indexOf(Izmir));====>"+index +"</h4>"+ "<br>";
-//#endregion
+// 7. splice(): Dizideki belirli bir kısmı kaldırır ve/veya yeni öğeler ekler.  
+const removedOperators = operators.splice(1, 2);
+console.log("Silinen operatörler:", removedOperators); // ["Osman", "Mustafa"]
+
+// 8. map(): Dizideki her öğe için belirli bir işlemi uygular ve yeni bir dizi oluşturur.
+const mappedOperators = operators.map((operator) => operator.toUpperCase());
+console.log("Büyük harfli operatörler:", mappedOperators); // ["ALI", "OSMAN", "MUSTAFA", "RIFAT"]
+
+// 9. filter(): Belirli bir koşulu sağlayan öğeleri filtreler ve yeni bir dizi oluşturur.
+const filteredOperators = operators.filter((operator) => operator.length > 3);
+console.log("Filtrelenmiş operatörler:", filteredOperators); // ["Mustafa", "Rıfat"]
+
+// 10. reduce(): Dizideki her öğe için belirli bir işlemi uygular ve tek bir sonuç döndürür.
+const reducedOperators = operators.reduce((accumulator, operator) => accumulator + operator, "");
+console.log("Azaltılmış operatörler:", reducedOperators); // "AliOsmanMustafaRıfat"
+
+// 11. forEach(): Dizideki her öğe için belirli bir işlemi uygular.
+operators.forEach((operator) => console.log("Operatör:", operator));
+
+// 12. every(): Dizideki tüm öğelerin belirli bir koşulu sağlayıp sağlamadığını kontrol eder.
+const allOperatorsAreLong = operators.every((operator) => operator.length > 3);
+console.log("Tüm operatörler uzun mu?", allOperatorsAreLong); // false
+
+// 13. some(): Dizideki herhangi bir öğenin belirli bir koşulu sağlayıp sağlamadığını kontrol eder.
+const someOperatorsAreLong = operators.some((operator) => operator.length > 3);
+console.log("Bazı operatörler uzun mu?", someOperatorsAreLong); // true
+
+// 14. find(): Belirli bir koşulu sağlayan ilk öğeyi döndürür.
+const longOperator = operators.find((operator) => operator.length > 3);
+console.log("Uzun operatör:", longOperator); // "Mustafa"
+
+// 15. findIndex(): Belirli bir koşulu sağlayan ilk öğenin indeksini döndürür.
+const longOperatorIndex = operators.findIndex((operator) => operator.length > 3);
+console.log("Uzun operatörün indeksi:", longOperatorIndex); // 2
+
+// 16. flat(): Diziyi düzleştirir.
+const nestedOperators = ["Ali", ["Osman", "Mustafa"], "Rıfat"];
+const flatOperators = nestedOperators.flat();
+console.log("Düzleştirilmiş operatörler:", flatOperators); // ["Ali", "Osman", "Mustafa", "Rıfat"]
+
+// 17. flatMap(): Dizideki her öğe için belirli bir işlemi uygular ve ardından diziyi düzleştirir.
+const flatMappedOperators = operators.flatMap((operator) => operator.split(""));
+console.log("Düzleştirilmiş harfler:", flatMappedOperators); // ["A", "l", "i", "O", "s", "m", "a", "n", "M", "u", "s", "t", "a", "f", "a", "R", "ı", "f", "a", "t"]
+
+// 18. from(): Dizi benzeri bir nesneyi diziye dönüştürür.
+const arrayLikeObject = { 0: "Ali", 1: "Osman", 2: "Mustafa", 3: "Rıfat", length: 4 };
+const arrayFromObject = Array.from(arrayLikeObject);
+console.log("Nesne dizisi:", arrayFromObject); // ["Ali", "Osman", "Mustafa", "Rıfat"]
+
+// 19. keys(): Dizideki indeksleri içeren bir dizi döndürür.
+const operatorIndices = operators.keys();
+console.log("Operatör indeksleri:", Array.from(operatorIndices)); // [0, 1, 2, 3]
+
+// 20. values(): Dizideki öğeleri içeren bir dizi döndürür.
+const operatorValues = operators.values();
+console.log("Operatör değerleri:", Array.from(operatorValues)); // ["Ali", "Osman", "Mustafa", "Rıfat"]
+
+// 21. entries(): Dizideki öğelerin indeks ve değerlerini içeren bir dizi döndürür.
+const operatorEntries = operators.entries();
+console.log("Operatör girişleri:", Array.from(operatorEntries)); // [[0, "Ali"], [1, "Osman"], [2, "Mustafa"], [3, "Rıfat"]]
+
+// 22. copyWithin(): Dizinin belirli bir kısmını kopyalar ve başka bir kısmına yapıştırır.
+const copiedOperators = operators.copyWithin(0, 2);
+console.log("Kopyalanmış operatörler:", copiedOperators); // ["Mustafa", "Rıfat", "Mustafa", "Rıfat"]
+
+// 23. fill(): Dizinin belirli bir kısmını belirli bir değerle doldurur.
+const filledOperators = operators.fill("Ali", 1, 3);
+console.log("Doldurulmuş operatörler:", filledOperators); // ["Mustafa", "Ali", "Ali", "Rıfat"]
+
+// 24. pop(): Dizinin sonundaki öğeyi kaldırır.
+const poppedOperator = operators.pop();
+console.log("Çıkarılan operatör:", poppedOperator); // "Rıfat"
+
+// 25. push(): Dizinin sonuna yeni öğeler ekler.
+const pushedOperators = operators.push("Rıfat");
+console.log("Eklenmiş operatörler:", pushedOperators); // 4
+
+// 26. shift(): Dizinin başındaki öğeyi kaldırır.
+const shiftedOperator = operators.shift();
+console.log("Çıkarılan operatör:", shiftedOperator); // "Mustafa"
+
+// 27. unshift(): Dizinin başına yeni öğeler ekler.
+const unshiftedOperators = operators.unshift("Mustafa");
+console.log("Eklenmiş operatörler:", unshiftedOperators); // 4
+
+// 28. toString(): Diziyi bir dizeye dönüştürür.
+const stringifiedOperators = operators.toString();
+console.log("Dizeye dönüştürülmüş operatörler:", stringifiedOperators); // "Mustafa,Osman,Rıfat"
+
+// 29. toLocaleString(): Diziyi yerel bir dizeye dönüştürür.
+const localizedOperators = operators.toLocaleString();
+
+// 30. concat(): Dizileri birleştirir.
+const otherOperators = ["Ali", "Osman"];
+const concatenatedOperators = operators.concat(otherOperators);
+console.log("Birleştirilmiş operatörler:", concatenatedOperators); // ["Mustafa", "Osman", "Rıfat", "Ali", "Osman"]
+*/

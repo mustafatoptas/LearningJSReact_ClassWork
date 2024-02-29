@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Osman'ın Çalışmaları</title>
-    
-</head>
-<body>
-    <div >
+    <link rel="stylesheet" href="../menupage.css" />
+  </head>
+  <body class="dark-theme">
+    <link href="menupage.css" />
+    <div class="wrapper">
+      <div id="menu-container" class="menu1">
         <ul id="menu-items">
-            <li><a href="#" onclick="loadContent('A')">A</a></li>
-            <li><a href="#" onclick="loadContent('B')">B</a></li>
-           
-        </ul>
-    </div>
+          <li>
+            <a href="#" onclick="loadContent('ArrayMethods')">Array Methods</a>
+          </li>
+          <li>
+            <a href="#" onclick="loadContent('DataTypesAndOperators')"
+              >Data Types And Operators</a
+            >
+          </li>
+          <li><a href="#" onclick="loadContent('Functions')">Functions</a></li>
 
-    <div id="content">
-       
+          <li><a href="#" onclick="loadContent('Objects')">Objects</a></li>
+        </ul>
+      </div>
+      <div></div>
+      <div class="div-flex"></div>
+      <div id="content">
+        <div class="div-flex"></div>
+      </div>
+      <div id="Functions"></div>
     </div>
 
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>
