@@ -250,6 +250,7 @@ divFindIndex.innerHTML +=
 // const finder=cities.find(finder=>finder=="Izmir")
 // outputDivFind.innerHTML+="<h4>"+"cities.find(finder=>finder==Izmir)====>"+finder +"</h4>"+ "<br>";
 
+
 // let outputDivFindIndex = document.getElementById("FindIndex");
 // outputDivFindIndex.innerHTML += "<h1>FindIndex(Izmir)</h1><br>";
 // outputDivFindIndex.innerHTML +="<h4>"+"Current Array====>"+ cities.toString() +"</h4>"+ "<br>";
