@@ -4,9 +4,7 @@ const ankara="Ankara";
 const izmir="Izmir";
 const antalya="Antalya";
 const muğla="Muğla";
-
 let cities = new Array();
-
 
 for (let i = 0; i < 4; i++) {
     cities.push(konya);
