@@ -55,9 +55,7 @@ DivPush3.innerHTML +=
            "x != y is ====> Eşit değil midir? (true)<br>" +
            "x !== y is ====> Aynı ve Eşit değil midir? (true)<br>" +
            "x > y is ====> x, y'den büyüktür. (true)<br>" +
-          
            "x >= y is ====> x, y'den büyük veya eşittir. (true)<br>" +
-           
            "x && y > 1 is ====> x ve y 1'den büyük müdür? (true)<br>";
 
 
