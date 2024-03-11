@@ -31,40 +31,34 @@ const optionalArgument=(name='rıfat')=>{
 let optionalArgumentDiv=document.getElementById("optianalArguments");
 optionalArgumentDiv.innerHTML+=" <h2>Optional Arguments</h2><br>";
 optionalArgumentDiv.innerHTML+="<h3>const optionalArgument = (name='rıfat') => {<br/> return 'Hello, '+name+'!'; <br/>}</h3>";
+optionalArgumentDiv.innerHTML+="<h3>example 1 = optionalArgumnet() ===>"+optionalArgument()+"</h3>"
+optionalArgumentDiv.innerHTML+="<h3>examle 2 = optionalArgument('Osman')===>"+optionalArgument("Osman")+" </h3>"
 console.log("Optional Arguments - greetWithName():"+optionalArgument("Osman"));
 console.log("Optional Arguments - greetWithName():"+optionalArgument());
 
+divCreate("closureFunction");
+function outerFunction() {
+  let outerVariable = "Hello";
+  function innerFunction() {console.log(outerVariable); }  return innerFunction;}
+let closureFunctionDiv=document.getElementById("closureFunction");
+closureFunctionDiv.innerHTML+=" <h2>Closure Function</h2><br>";
+closureFunctionDiv.innerHTML+=" <h3> &#160 function outerFunction() { <br> &#160 let outerVariable = 'Hello';<br> <br> &#160 function innerFunction() { <br> &#160 &#160 return outerVariable <br>}<br> &#160 &#160 return innerFunction;<br>}<br> <br> ===> Hello!</h3>";
 
+divCreate("recursionFunction");
+const factorial = (n) => {  if (n === 1) {    return 1; }  return n * factorial(n - 1);};
+let recursionFunctionDiv=document.getElementById("recursionFunction");
+recursionFunctionDiv.innerHTML+=" <h2>Recursion Function</h2><br>";
+recursionFunctionDiv.innerHTML+=" <h3>const factorial = (n) => {<br> &#160 if (n === 1) {<br> &#160 &#160 return 1;<br> &#160 }<br> &#160 return n * factorial(n - 1);<br>} <br> factorial(5) ===> 120</h3>";
 
-
-const innerFunc = outerFunction(5);
-console.log("Function Closure - innerFunc(3):", innerFunc(3)); // 8
-
-// Recursion Functions
-const factorial = (n) => {
-  if (n === 1) {
-    return 1;
-  }
-  return n * factorial(n - 1);
-};
-
-console.log("Recursion Functions - factorial(5):", factorial(5)); // 120
-
-// Growing Functions
-const adder = (a, b, c) => {
-  return a + b + c;
-};
-
-console.log("Growing Functions - adder(2, 3, 4):", adder(2, 3, 4)); // 9
-
-// Fonksiyon bağlama / Binding functions
+divCreate("functionBinding");
 const user = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: "Rıfat",
+  lastName: "Demirok",
   getFullName: function () {
     return this.firstName + " " + this.lastName;
   },
 };
-
-const getFullNameBound = user.getFullName.bind(user);
-console.log("Function Binding - getFullNameBound():", getFullNameBound()); // John Doe
+let functionBindingDiv=document.getElementById("functionBinding");
+functionBindingDiv.innerHTML+=" <h2>Function Binding</h2><br>";
+functionBindingDiv.innerHTML+="<h5>When the boundFullNameFunc function is created using the bind() method, its this context is bound to the person object. </h5>"
+functionBindingDiv.innerHTML+=" <h3>const user = {<br> &#160 firstName: 'Rıfat',<br> &#160 lastName: 'Demirok',<br>  <br> &#160 getFullName: function () {<br> &#160 &#160 return this.firstName + ' ' + this.lastName;<br> &#160 },<br>};<br> <br> const getFullNameBound =<br> &#160 &#160 user.getFullName.bind(user);<br> <br> &#160 &#160 getFullNameBound() ===> Rıfat Demirok</h3>";
