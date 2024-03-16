@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .dark-theme {
-    background-color: #1f1f1f; 
+    background-color: #97FEED; 
     color: #fff; 
 }
 #menu-container, #content {
@@ -7,23 +12,43 @@
 }
 
 #menu-container {
-    width: 13%; 
-    background-color: #333; 
-    color: #a32a2a; 
-    position: fixed; 
-    height: 100%; 
-    overflow-y: auto; 
+    width: 15%;
+    background: #0B666A;
+    color: #173c74;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    top: 20px; /* Sayfanın üst kısmında başlasın */
+    left: 0; /* Sayfanın solunda başlasın */
+    z-index: 100; /* Başlığın altında kalsın */
 }
-
-#menu-items {
-    list-style-type: none;
+#menu-container ul{
+    /* list-style-type: none; */
     padding: 0;
     margin: 0;
+
+}
+
+
+
+#menu-container ul li a{
+text-decoration: none;
+color: #fdfdfdcb;
+}
+#menu-items {
+    /* list-style-type: none;*/
+    padding: 0;
+    margin: 0; 
 }
 
 #menu-items li {
     margin-bottom: 10px;
-    font-size: large;
+
+     font-family: 'Tahoma', Geneva, sans-serif; 
+
+
+    
+    
 }
 
 #menu-items li a {
@@ -40,24 +65,41 @@
     margin-left: 20%;
 }
 
-.div-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .array-div {
-    width: 470px; 
+    width: 550px; 
     margin-left: 400px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: #a22222;
-    border: 1px solid #942a2a;
-    border-radius: 18PX;
+    background:#35A29F;
+    border-radius: 8%;
     padding: 20px;
     box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
-.bodydiv{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-}
+
+
+header {
+    background:#071952;
+  
+   
+    padding: 20px;
+    text-align: center;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
+    top: 0; 
+
+  }
+
+  
+  .headerh1 {
+    color: #35A29F; 
+    font-size: 24px; 
+  }
+  .div-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 9%;
+    margin-top: 6%;
+  }

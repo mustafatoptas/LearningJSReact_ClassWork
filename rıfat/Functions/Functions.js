@@ -1,10 +1,9 @@
 const divCreate= (id)=>{
-var divElement=document.createElement("div");
-divElement.classList.add("array-div");
-divElement.setAttribute("id",id);
-document.body.appendChild(divElement);
-}
-
+  var divElement=document.createElement("div");
+  divElement.classList.add("array-div");
+  divElement.setAttribute("id",id);
+  document.getElementById("div-1flex").appendChild(divElement);
+  }
 divCreate("arrowFunction");
 const add = (a, b) => {
   return a + b;
@@ -62,3 +61,12 @@ let functionBindingDiv=document.getElementById("functionBinding");
 functionBindingDiv.innerHTML+=" <h2>Function Binding</h2><br>";
 functionBindingDiv.innerHTML+="<h5>When the boundFullNameFunc function is created using the bind() method, its this context is bound to the person object. </h5>"
 functionBindingDiv.innerHTML+=" <h3>const user = {<br> &#160 firstName: 'Rıfat',<br> &#160 lastName: 'Demirok',<br>  <br> &#160 getFullName: function () {<br> &#160 &#160 return this.firstName + ' ' + this.lastName;<br> &#160 },<br>};<br> <br> const getFullNameBound =<br> &#160 &#160 user.getFullName.bind(user);<br> <br> &#160 &#160 getFullNameBound() ===> Rıfat Demirok</h3>";
+
+divCreate("restParameter");
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b);
+};
+let restParameterDiv=document.getElementById("restParameter");
+restParameterDiv.innerHTML+=" <h2>Rest Parameter</h2><br>";
+restParameterDiv.innerHTML+="<h3>const sum = (...args) => {<br> &#160 return args.reduce((a, b) => a + b);<br>}<br> sum(1, 2, 3, 4, 5) ===> 15 <br/><br/>OR<br/><br/></h3>";
+restParameterDiv.innerHTML+="<h3>sum(1, 2, 3, 4, 5,6,7) ===> "+sum(1, 2, 3, 4, 5, 6, 7)+"</h3>";

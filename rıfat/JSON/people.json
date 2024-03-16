@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Osman",
+      "surname": "Özer",
+      "age": 24,
+      "city": "Sivas",
+      "isStudent": true
+    },
+    {
+      "name": "Rıfat",
+      "surname": "Demirok",
+      "age": 22,
+      "city": "Konya",
+      "isStudent": true
+    },
+    {
+      "name": "Ali",
+      "surname": "Özer",
+      "age": 40,
+      "city": "Konya",
+      "isStudent": false
+    },
+    {
+      "name": "Mustafa",
+      "surname": "Toptaş",
+      "age": 28,
+      "city": "Konya",
+      "isStudent": false
+    }
+  ]
+  
