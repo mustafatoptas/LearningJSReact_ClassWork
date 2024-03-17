@@ -1,4 +1,3 @@
-
 .dark-theme {
     background-color: #1f1f1f; 
     color: #fff; 
@@ -6,7 +5,7 @@
 
 
 header {
-    background-color: #333; 
+    background:  linear-gradient(to left, rgba(0, 0, 255, 0.65), rgba(54, 0, 255, 0.21)); border-color: rgb(28, 24, 168); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px; 
     padding: 20px;
     text-align: center;
 }
@@ -21,7 +20,7 @@ header h1 {
 }
 
 .person {
-    background-color: #333; 
+    background: linear-gradient(to left, rgba(127, 0, 255, 0.65), rgba(127, 0, 255, 0.21)); border-color: rgb(85, 28, 168); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
     color: #fff; 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -58,4 +57,11 @@ button {
 
 button:hover {
     background-color: #0056b3; 
+}
+.rifat{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }

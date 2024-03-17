@@ -1,9 +1,10 @@
-
-var typeDiv = document.createElement("div");
-typeDiv.classList.add("array-div");
-typeDiv.setAttribute("id", "string");
-document.body.appendChild(typeDiv);
-
+const divCreate= (id)=>{
+  var divElement=document.createElement("div");
+  divElement.classList.add("array-div");
+  divElement.setAttribute("id",id);
+  document.getElementById("div-1flex").appendChild(divElement);
+  }
+divCreate("string");
 let DivPush = document.getElementById("string");
 DivPush.innerHTML += "<h1> Data Type</h1><br>";
 DivPush.innerHTML +=
@@ -18,10 +19,7 @@ DivPush.innerHTML +=
            "myCar is                  ====>" + typeof myCar + "<br>" +
            "null is                   ====> " + typeof null; + "</h4>" + "<br>";
 
-var operatorDiv = document.createElement("div");
-operatorDiv.classList.add("array-div");
-operatorDiv.setAttribute("id", "operator");
-document.body.appendChild(operatorDiv);
+divCreate("operator");
 let x=5;
 let y=2;
 let DivPush2 = document.getElementById("operator");
@@ -43,10 +41,7 @@ DivPush2.innerHTML +=
            "x %= y is ====>" + (x%=y) + "<br>" +
            "x **= y is ====>" + (x**=y) + "<br>" ;
 
-var mantiksalDiv = document.createElement("div");
-mantiksalDiv.classList.add("array-div");
-mantiksalDiv.setAttribute("id", "mantiksal");
-document.body.appendChild(mantiksalDiv);
+divCreate("mantiksal");
 let DivPush3 = document.getElementById("mantiksal");
 DivPush3.innerHTML += "<h1>Logical Operators</h1><br>";
 DivPush3.innerHTML +=
